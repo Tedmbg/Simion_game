@@ -9,11 +9,16 @@ body {
   margin:  5%;
   color: #FEF2BF;
 }
+#player_score{
+  font-family: 'Press Start 2P',cursive;
+  color:#FEF2BF;
+  font-size:2rem;
+}
 
 .container {
   display: block;
-  width: 50%;
-  margin: auto;
+  width: 50%; /* sets the width 50% on the parent */
+  margin: auto; /* centers the contents horizontally */
 
 }
 

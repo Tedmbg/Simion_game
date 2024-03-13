@@ -9,9 +9,38 @@ var level = 0;
 //generate random number function.
 function nextSequence() {
   $("h1").text("Level " + level);
+  var score;
+  if (level < 10) {
+    score = level + 2;
+    $("#player_score").text(`Score ${score} 👀 🐓`);
+    if (level === 0) {
+      score = level;
+      $("#player_score").text(`Score ${score} 🫂`);
+    }
+  } else if (level > 10) {
+    score = level + 4;
+    $("#player_score").text(`Score ${score} 😎`);
+  } else if (level > 20) {
+    score = level + 4;
+    $("#player_score").text(`Score ${score} 🥳`);
+  } else if (level > 30) {
+    score = level + 6;
+    $("#player_score").text(`Score ${score} 👊 🍕`);
+  }else if(level>40){
+    score = level + 8;
+    $("#player_score").text(`Score ${score} 🔥🔥 🚒🚒🚒`);
+  }else if(level>50){
+    score = level + 10;
+    $("#player_score").text(`Score ${score} 💰💰💰💰`);
+  }else if(level>50){
+    score = level + 10;
+    $("#player_score").text('Out of Scores 😂😂 Next player...');
+  }
+
+
   var randomNumber = Math.floor(Math.random() * 4);
   // console.log(randomNumber);
-  // return randomNumber;
+  // return randomNumber btw 0-3;
   console.log("The game is at level " + level);
   level++;
   var randomChosenColour = buttonColours[randomNumber];
@@ -88,37 +117,36 @@ $("body").on("keydown", function (e) {
 function checkAnswer(currentLevel) {
   if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
     // console.log("success");
-    if(gamePattern.length === userClickedPattern.length){
+    if (gamePattern.length === userClickedPattern.length) {
       var allMatch = true;
-      for(var i = 0;i<gamePattern.length;i++){
-        if(gamePattern[i] !== userClickedPattern[i]){
+      for (var i = 0; i < gamePattern.length; i++) {
+        if (gamePattern[i] !== userClickedPattern[i]) {
           allMatch = false;
           break;
         }
       }
-      if(allMatch){
-        setTimeout(function(){
+      if (allMatch) {
+        setTimeout(function () {
           nextSequence();
-        },1000);
+        }, 1000);
         userClickedPattern = [];
       }
-    }    
+    }
   } else {
     startOver();
   }
 }
-function startOver(){
-    var wrong_audio = new Audio("./sounds/wrong.mp3");
-    wrong_audio.play();
-    $("body").addClass("game-over");
-    setTimeout(function(){
-      $("body").removeClass("game-over");
-    },200);
-    $("h1").text("Game Over, Press any Key to Restart!")
-    keyEnabled = true;
-    gamePattern = [];
-    userClickedPattern = [];
-    level = 0;
-    // console.log("Wrong!");
+function startOver() {
+  var wrong_audio = new Audio("./sounds/wrong.mp3");
+  wrong_audio.play();
+  $("body").addClass("game-over");
+  setTimeout(function () {
+    $("body").removeClass("game-over");
+  }, 200);
+  $("h1").text("Game Over, Press any Key to Restart!");
+  keyEnabled = true;
+  gamePattern = [];
+  userClickedPattern = [];
+  level = 0;
+  // console.log("Wrong!");
 }
-
