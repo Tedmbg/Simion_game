@@ -1,0 +1,156 @@
+body {
+    background-color: #001F3F;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.image {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    margin-top: -180px;
+    margin-bottom: 100px;
+    margin-right: 20px;
+    margin-left: 100px;
+
+}
+
+.content {
+    padding: 20px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sign-in {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    background: linear-gradient(to bottom, rgb(50, 182, 116) 25%, white 20%);
+    border-radius: 60px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: -100px;
+    margin-bottom: 200px;
+    margin-right: 80px;
+    margin-left: 250px;
+  }
+
+  .get-started {
+    font-family: "Comic Sans MS", sans-serif;
+    width: 140%;
+    padding: 10px;
+    margin-top: 0px;
+    margin-bottom: -100px;
+    margin-left: 50px;
+    color: #001F3F;
+    font-size: 50px;
+  }
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:white;
+    padding: 20px;
+    border-radius: 50px;
+    font-family: "Open Sans";
+    font-weight: 500;
+    margin-top: 25px;
+    margin-bottom: -50px;
+    
+}
+
+.form input[type="text"],
+.form input[type="password"] {
+  width: 200%;
+  padding: 10px;
+  margin-left: -120px;
+  margin-bottom: 10px;
+  border: 1px solid #001F3F;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: white;
+  color: blue;
+}
+
+.form label{
+    width: 100%;
+  padding: 10px;
+  margin-left: -120px;
+  margin-bottom: 10px;
+  color: #001F3F;
+  font-size: 50px;
+}
+
+.form a {
+    margin-left: -100px;
+ 
+}
+
+.form button {
+    padding: 10px 90px;
+    background: linear-gradient(to right, 
+        red,  orange, yellow);
+    color: black;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-family: "Open Sans";
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.form button:hover {
+    background-color: #008000;
+}
+
+.form-2  {
+    margin-bottom: -115px;
+  }
+
+.form-2 label {
+    font-size: 24px;
+    margin-bottom: -80px;
+  }
+
+.form-2 input[type="text"],
+.form-2 input[type="password"] {
+    width: 180%;
+    padding: 10px;
+    margin-left: -120px;
+    margin-bottom: 10px;
+    border: 1px solid #001F3F;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: white;
+    color: blue;
+  }
+.sign-up-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.sign-up-link a {
+    color: #00FF00;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.sign-up-link a:hover {
+    text-decoration: underline;
+}
+.play_button{
+    text-decoration: none;
+}
+
+
+
