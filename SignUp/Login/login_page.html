@@ -10,14 +10,14 @@
     <div class="container">
         <img src="/images/new logo.svg" alt="Image" class="image">
         <div class="sign-in">
-            <p class="get-started"> <img src="getstarted.png" alt="Image" class="image"></p>
-            <div class="form">  
+             <div class="form">
+                <div class="image-form"></div>  
                 <form action="submit.php" method="post">
                     <label for="username">Username:</label><br>
-                    <input type="text" id="username" name="username" required><br>
+                    <input type="text" id="username" name="username" placeholder="user1@123" required><br>
                     <label for="password">Password:</label><br>
-                    <input type="password" id="password" name="password" required><br>
-                    <a href="signup_page.html">Not signed up? Sign up</a><br>
+                    <input type="password" id="password" name="password"  placeholder="****"><br>
+                    <a  class="link" href="signup_page.html">Not signed up? Sign up</a><br>
                     <button type="submit"><a class="play_button" href="/index.html">Play !</a></button>
                 </form>
             </div>
