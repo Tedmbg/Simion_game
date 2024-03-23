@@ -1,6 +1,20 @@
+@keyframes moveBackground {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
+}
+
+
+
 body {
   text-align: center;
-  background: linear-gradient(to left, #001F3F, #003366, #004488, #0055AA, #0066CC, #0077DD, #0088FF);
+  background: linear-gradient(to right, #001F3F, #003366, #004488, #0055AA, #0066CC, #0077DD, #0088FF,#001F3F);
+  background-size: 200% 100%; /* make it twice the viewport height */
+  animation:moveBackground 7s  infinite;
+  animation-direction: alternate;
 }
 
 #level-title {
@@ -31,10 +45,11 @@ body {
   border-radius: 20%;
 }
 
-.game-over {
-  background-color: red;
-  opacity: 0.8;
-}
+/* .game-over {
+  background-color: #d20102 !important;
+  opacity: 0.8 !important;
+  animation: none !important;
+} */
 
 .red {
   background-color: red;

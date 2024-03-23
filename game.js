@@ -26,17 +26,16 @@ function nextSequence() {
   } else if (level > 30) {
     score = level + 6;
     $("#player_score").text(`Score ${score} 👊 🍕`);
-  }else if(level>40){
+  } else if (level > 40) {
     score = level + 8;
     $("#player_score").text(`Score ${score} 🔥🔥 🚒🚒🚒`);
-  }else if(level>50){
+  } else if (level > 50) {
     score = level + 10;
     $("#player_score").text(`Score ${score} 💰💰💰💰`);
-  }else if(level>50){
+  } else if (level > 50) {
     score = level + 10;
-    $("#player_score").text('Out of Scores 😂😂 Next player...');
+    $("#player_score").text("Out of Scores 😂😂 Next player...");
   }
-
 
   var randomNumber = Math.floor(Math.random() * 4);
   // console.log(randomNumber);
@@ -139,10 +138,18 @@ function checkAnswer(currentLevel) {
 function startOver() {
   var wrong_audio = new Audio("./sounds/wrong.mp3");
   wrong_audio.play();
-  $("body").addClass("game-over");
+  $("body").css({ background: "#d20102", opacity: "0.8" });
+  // $("body").addClass("game-over");
   setTimeout(function () {
-    $("body").removeClass("game-over");
-  }, 200);
+    // $("body").removeClass("game-over");
+    $("body").css({
+      'background':
+        "linear-gradient(to right, #001F3F, #003366, #004488, #0055AA, #0066CC, #0077DD, #0088FF, #001F3F)",
+      "background-size": "200% 100%",
+      'animation': "moveBackground 7s infinite",
+      "animation-direction": "alternate",
+    });
+  }, 1000);
   $("h1").text("Game Over, Press any Key to Restart!");
   keyEnabled = true;
   gamePattern = [];
