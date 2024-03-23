@@ -7,35 +7,51 @@
   }
 }
 
-
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
 
 body {
   margin: 0;
   padding: 0;
   text-align: center;
-  background: linear-gradient(to right, #001F3F, #003366, #004488, #0055AA, #0066CC, #0077DD, #0088FF,#001F3F);
+  background: linear-gradient(
+    to right,
+    #001f3f,
+    #003366,
+    #004488,
+    #0055aa,
+    #0066cc,
+    #0077dd,
+    #0088ff,
+    #001f3f
+  );
   background-size: 200% 100%; /* make it twice the viewport height */
-  animation:moveBackground 7s  infinite;
+  animation: moveBackground 7s infinite;
   animation-direction: alternate;
 }
 
 #level-title {
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
   font-size: 3rem;
-  margin:  5%;
+  /* margin:  5%; */
+  padding-top: 80px;
   color: white;
 }
-#player_score{
-  font-family: 'Press Start 2P',cursive;
-  color:white;
-  font-size:2rem;
+#player_score {
+  font-family: "Press Start 2P", cursive;
+  color: white;
+  font-size: 2rem;
 }
 
 .container {
   display: block;
   width: 50%; /* sets the width 50% on the parent */
   margin: auto; /* centers the contents horizontally */
-
 }
 
 .btn {
@@ -73,11 +89,12 @@ body {
   box-shadow: 0 0 20px white;
   background-color: grey;
 }
-#preloader{
+#preloader {
   box-sizing: border-box;
- background:#002449;
- height:100vh;
- width:100%;
- position:fixed;
- z-index: 100;
+  background: #002449 url(images/animated\ logo\ 2.gif) no-repeat center center;
+  background-size: 20%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
 }

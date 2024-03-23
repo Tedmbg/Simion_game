@@ -157,3 +157,9 @@ function startOver() {
   level = 0;
   // console.log("Wrong!");
 }
+
+$(window).on('load',function(){
+  setTimeout(function(){
+    $("#preloader").fadeOut("slow");
+  },4000)
+});
