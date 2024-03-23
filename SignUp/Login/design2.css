@@ -1,27 +1,42 @@
+.logo {
+  opacity: 0.8;
+}
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Fredoka One', sans-serif;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; 
+    min-height: 100vh;
+    background: linear-gradient(to left, #001F3F, #003366, #004488, #0055AA, #0066CC, #0077DD, #0088FF);
+   
   }
+
+
   .header {
-    background-color:#60AA60; 
-    flex: 1; 
+    background: transparent;
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
-  }
-  .header h1 {
-    color:  #001F3F;
-    font-size: 2em;
+    flex-direction: column;
+}
+
+
+.header h1,
+.header h2 {
+  background-image: linear-gradient(to right, #8BC34A, #7CB342, #6FA84C, #5EAC2D, #4CAF50);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+    font-size: 3em;
     margin: 0;
-  }
+    font-family: 'Fredoka One', sans-serif;
+}
   .content {
-    background-color: white;
-    flex: 3; 
+    background:transparent;
+    flex: 3;
     padding: 20px;
   }
   .content h2 {
@@ -32,7 +47,8 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
-    
+    color: white;
+   
   }
   .table span {
     font-weight: bold;
@@ -43,18 +59,23 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #60AA60; 
-    padding: 10px;
-    border-radius: 5px;
+    background-color: transparent;
+    padding: 30px;
+    border-radius: 20px;
     margin-bottom: 5px;
     text-align: center;
-    border: 1px solid black; 
+    box-shadow: 0 0 0 5px inset transparent, 0 0 0 10px inset transparent, 0 0 0 15px inset transparent, 0 0 0 20px inset transparent, 0 0 0 25px inset transparent, 0 0 0 30px inset transparent, 0 0 0 35px inset transparent, 0 0 0 40px inset transparent, 0 0 0 45px inset transparent, 0 0 0 50px inset transparent, 0 0 0 55px inset transparent, 0 0 0 60px inset transparent, 0 0 0 65px inset transparent, 0 0 0 70px inset transparent, 0 0 0 75px inset transparent, 0 0 0 80px inset transparent, 0 0 0 85px inset transparent, 0 0 0 90px inset transparent, 0 0 0 95px inset transparent, 0 0 0 100px inset transparent;
+    color: white;
+    background-image: linear-gradient(to right, #8BC34A, #7CB342, #6FA84C, #5EAC2D, #4CAF50);
   }
-  .entry .name,
-  .entry .score {
+
+
+  .entry .scare,
+  .entry .position {
     width: 50%;
-    padding: 5px; 
-    border: 1px solid #ccc; 
+    padding: 5px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: white; 
+    background-color: white;
+    color: white;
   }
