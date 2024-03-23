@@ -61,7 +61,7 @@ body {
   .entry {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: center; 
     background-color: #77d625;
     padding: 30px;
     border-radius: 20px;
