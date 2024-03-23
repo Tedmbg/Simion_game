@@ -12,8 +12,8 @@ body {
   height: 700px;
   width: 700px;
   margin-top: 100px;
-  margin-left: 80px;
-  background-image: url("/images/new logo.svg");
+  margin-left: 100px;
+  background-image: url("/images/animated\ logo.gif");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,10 +39,10 @@ body {
 .image-form {
   position: absolute;
   top: 0;
-  right: 5.6rem;
+  right: 8.3rem;
   width: 39.2rem;
   height: 150px;
-  background-image: url("/images/getStartedNew.png");
+  background-image: url("/images/getStarted.gif");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -67,23 +67,21 @@ body {
   height: 2.3rem;
   padding: 10px;
   margin-left: -100px;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   border-radius: 15px;
-  font-size:1.3rem;
+  font-size:1.1rem;
   background-color: white;
   color: blue;
   box-shadow: 1px 1px 1px black;
 }
-.form input[type="text"]{
-    margin-bottom:50px;
-}
+
 
 .form label {
   padding: 10px;
   margin-left: -110px;
   margin-bottom: 10px;
   color: #001f3f;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 .form a {
@@ -121,10 +119,11 @@ body {
 }
 
 .form-2 input[type="text"],
-.form-2 input[type="password"] {
-  width: 180%;
+.form-2 input[type="password"]{
+  width: 33.5rem;
+  height:3.5rem;
   padding: 10px;
-  margin-left: -120px;
+  margin-left: -100px;
   margin-bottom: 10px;
   border: 1px solid #001f3f;
   border-radius: 5px;
@@ -148,4 +147,7 @@ body {
 }
 .play_button {
   text-decoration: none;
+}
+.form-2 input[id= "username" ],.form-2 input[id= "password" ],.form-2 input[id= "email" ]{
+    margin-bottom: 50px;
 }

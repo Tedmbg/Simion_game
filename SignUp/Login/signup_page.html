@@ -3,25 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up Page</title>
+    <title>Signup</title>
     <link rel="stylesheet" type="text/css" href="design.css">
 </head>
 <body>
     <div class="container">
-        <div class="image-div"z></div>
+        <div class="image-div"></div>
         <div class="sign-in">
-            <div class="form form-2">
-                <img  id="getStarted" src="/images/getStartedNewpng" alt="getStartedImages">
+             <div class="form form-2">
+                <div class="image-form"></div>  
                 <form action="submit.php" method="post">
-                    <label for="fullname"> Full Name:</label><br>
-                    <input type="text" id="fullname" name="fullname" required><br>
-                    <label for="email">Email:</label><br>
-                    <input type="text" id="email" name="email" required><br>
+                    <label for ="email">Email:</label><br> 
+                    <input type="text" id="email" name="email" placeholder="johndoe@gmail.com" required><br>
                     <label for="username">Username:</label><br>
-                    <input type="text" id="username" name="username" required><br>
+                    <input type="text" id="username" name="username" placeholder="user1@123" required><br>
                     <label for="password">Password:</label><br>
-                    <input type="password" id="password" name="password" required><br>
-                    <button type="submit">Sign Up!</button>
+                    <input type="password" id="password" name="password"  placeholder="****"><br>
+                    <button type="submit"><a class="play_button" href="/index.html">Play !</a></button>
                 </form>
             </div>
         </div>
