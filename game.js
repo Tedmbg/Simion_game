@@ -1,3 +1,4 @@
+
 // game pattern
 var gamePattern = [];
 // User clicked pattern
