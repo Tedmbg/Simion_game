@@ -24,24 +24,33 @@ const auth = getAuth(app);
 
 const submit = document.querySelector("#submit");
 submit.addEventListener("click", function (event) {
-  event.preventDefault(); // prevent page from reloading
+  event.preventDefault(); // prevent form submission
 
-  const email = document.querySelector("#email").value;
-  const password = document.querySelector("#password").value;
+  const emailInput = document.querySelector("#email");
+  const passwordInput = document.querySelector("#password");
+
+  // Trim whitespace from email input
+  const email = emailInput.value.trim();
+  const password = passwordInput.value;
+
+  // Perform basic email validation
+  if (!email || !email.includes("@")) {
+    alert("Please enter a valid email address.");
+    return;
+  }
 
   signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
-      // Signed up
+      // Signed in successfully
       const user = userCredential.user;
-      //   alert("Account created 👍");
-      window.location.href = "/game.html"; // redirect user to another email.
-
-      // ...
+      history.pushState({}, '', '/game.html'); // Redirect to game page
     })
     .catch((error) => {
+      // Handle sign-in errors
       const errorCode = error.code;
       const errorMessage = error.message;
-      alert("error occured!: " + errorMessage);
-      // ..
+      alert("Error occurred: " + errorMessage);
     });
 });
+
+
